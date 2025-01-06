@@ -7,19 +7,14 @@ import type { TradingAccount } from "~/shared/types/typeProps";
 
 export const SymbolCellRenderer = memo(
 	({ value, data }: ICellRendererParams<TradingAccount>) => {
-		const iconSrc = useMemo(() => data?.icon ?? "", [data?.icon]);
-		const bankName = useMemo(() => data?.bankName, [data?.bankName]);
-		const displayValue = useMemo(() => String(value ?? "Unknown"), [value]);
-		const displayBankName = useMemo(
-			() => bankName || "No Bank Name",
-			[bankName],
-		);
+		const iconSrc = data?.icon ?? "";
+		const bankName = data?.bankName;
 
 		return (
 			<div className="flex items-center gap-3">
 				<Image
 					src={iconSrc || "/default-icon.webp"}
-					alt={String(displayValue)}
+					alt={String(value ?? "Icon")}
 					className="h-8 w-8 rounded-full bg-gray-700"
 					width={32}
 					height={32}
@@ -31,9 +26,9 @@ export const SymbolCellRenderer = memo(
 						prefetch={false}
 						className="flex font-medium text-white"
 					>
-						{displayValue}
+						{value || "Unknown"}
 					</Link>
-					<p className="text-xs text-white">{displayBankName}</p>
+					<p className="text-xs text-white">{bankName || "No Bank Name"}</p>
 				</div>
 			</div>
 		);
@@ -52,20 +47,13 @@ SymbolCellRenderer.displayName = "SymbolCellRenderer";
 export const AmountCellRenderer = memo(
 	({ value, data }: ICellRendererParams<TradingAccount>) => {
 		const formattedValue = useMemo(() => {
-			if (typeof value !== "number") return "";
-			try {
-				return value.toLocaleString();
-			} catch {
-				return String(value);
-			}
+			return typeof value === "number" ? value.toLocaleString() : "";
 		}, [value]);
-
-		const currency = useMemo(() => data?.currency || "", [data?.currency]);
 
 		return (
 			<div className="text-right">
 				<div className="font-medium text-green-500">
-					{formattedValue} {currency}
+					{formattedValue} {data?.currency || ""}
 				</div>
 			</div>
 		);
