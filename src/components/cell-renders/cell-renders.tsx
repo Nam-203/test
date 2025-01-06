@@ -5,44 +5,40 @@ import Link from "next/link";
 
 import type { TradingAccount } from "~/shared/types/typeProps";
 
-// Preload essential assets for faster render
-const DEFAULT_ICON = "/default-icon.webp";
-
 export const SymbolCellRenderer = memo(
 	({ value, data }: ICellRendererParams<TradingAccount>) => {
-		const iconSrc = useMemo(() => data?.icon ?? DEFAULT_ICON, [data?.icon]);
-		const bankName = data?.bankName;
+		const iconSrc = useMemo(() => data?.icon ?? "", [data?.icon]);
+		const bankName = useMemo(() => data?.bankName, [data?.bankName]);
+		const displayValue = useMemo(() => String(value ?? "Unknown"), [value]);
+		const displayBankName = useMemo(
+			() => bankName || "No Bank Name",
+			[bankName],
+		);
 
 		return (
 			<div className="flex items-center gap-3">
-				{/* Lazy-load hình ảnh với priority nếu cần */}
 				<Image
-					src={iconSrc}
-					alt={String(value ?? "Icon")}
+					src={iconSrc || "/default-icon.webp"}
+					alt={String(displayValue)}
 					className="h-8 w-8 rounded-full bg-gray-700"
 					width={32}
 					height={32}
-					loading="lazy" // Tối ưu lazy-loading
-					placeholder="blur" // Dùng hiệu ứng blur placeholder
-					blurDataURL={iconSrc} // Base64 placeholder
+					loading="lazy"
 				/>
 				<div className="flex flex-col justify-center">
-					{/* Tối ưu Link và fallback text */}
 					<Link
 						href="/details"
-						prefetch={false} // Tắt prefetch
-						className="flex font-medium text-white hover:underline"
+						prefetch={false}
+						className="flex font-medium text-white"
 					>
-						{value || "Unknown"}
+						{displayValue}
 					</Link>
-					{/* Fallback cho tên ngân hàng */}
-					<p className="text-xs text-gray-300">{bankName || "No Bank Name"}</p>
+					<p className="text-xs text-white">{displayBankName}</p>
 				</div>
 			</div>
 		);
 	},
 	(prevProps, nextProps) => {
-		// So sánh props để ngăn render lại không cần thiết
 		return (
 			prevProps.value === nextProps.value &&
 			prevProps.data?.icon === nextProps.data?.icon &&
@@ -53,26 +49,28 @@ export const SymbolCellRenderer = memo(
 
 SymbolCellRenderer.displayName = "SymbolCellRenderer";
 
-// AmountCellRenderer Component
 export const AmountCellRenderer = memo(
 	({ value, data }: ICellRendererParams<TradingAccount>) => {
-		// Format và memo hóa giá trị
 		const formattedValue = useMemo(() => {
-			return typeof value === "number" ? value.toLocaleString("en-US") : "--";
+			if (typeof value !== "number") return "";
+			try {
+				return value.toLocaleString();
+			} catch {
+				return String(value);
+			}
 		}, [value]);
 
-		const currency = data?.currency || "";
+		const currency = useMemo(() => data?.currency || "", [data?.currency]);
 
 		return (
 			<div className="text-right">
-				<span className="font-medium text-green-500">
+				<div className="font-medium text-green-500">
 					{formattedValue} {currency}
-				</span>
+				</div>
 			</div>
 		);
 	},
 	(prevProps, nextProps) => {
-		// So sánh props để tránh render lại
 		return (
 			prevProps.value === nextProps.value &&
 			prevProps.data?.currency === nextProps.data?.currency
