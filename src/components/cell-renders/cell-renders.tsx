@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import type { ICellRendererParams } from "ag-grid-community";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,28 +12,32 @@ export const SymbolCellRenderer = memo(
 
 		return (
 			<div className="flex items-center gap-3">
-				{/* Lazy-load hình ảnh */}
 				<Image
-					src={iconSrc}
-					alt={String(value ?? "")}
+					src={iconSrc || "/default-icon.webp"}
+					alt={String(value ?? "Icon")}
 					className="h-8 w-8 rounded-full bg-gray-700"
 					width={32}
 					height={32}
-					loading="lazy" // Tối ưu lazy-loading
+					loading="lazy"
 				/>
 				<div className="flex flex-col justify-center">
-					{/* Link tối ưu hóa */}
 					<Link
 						href="/details"
 						prefetch={false}
 						className="flex font-medium text-white"
 					>
-						{value}
+						{value || "Unknown"}
 					</Link>
-					{/* Hiển thị tên ngân hàng */}
-					<p className="text-xs text-white">{bankName}</p>
+					<p className="text-xs text-white">{bankName || "No Bank Name"}</p>
 				</div>
 			</div>
+		);
+	},
+	(prevProps, nextProps) => {
+		return (
+			prevProps.value === nextProps.value &&
+			prevProps.data?.icon === nextProps.data?.icon &&
+			prevProps.data?.bankName === nextProps.data?.bankName
 		);
 	},
 );
@@ -42,17 +46,22 @@ SymbolCellRenderer.displayName = "SymbolCellRenderer";
 
 export const AmountCellRenderer = memo(
 	({ value, data }: ICellRendererParams<TradingAccount>) => {
-		// Format giá trị được tối ưu hóa
-		const formattedValue =
-			typeof value === "number" ? value.toLocaleString() : "";
+		const formattedValue = useMemo(() => {
+			return typeof value === "number" ? value.toLocaleString() : "";
+		}, [value]);
 
 		return (
 			<div className="text-right">
-				{/* Định dạng số và hiển thị đơn vị tiền */}
 				<div className="font-medium text-green-500">
-					{formattedValue} {data?.currency}
+					{formattedValue} {data?.currency || ""}
 				</div>
 			</div>
+		);
+	},
+	(prevProps, nextProps) => {
+		return (
+			prevProps.value === nextProps.value &&
+			prevProps.data?.currency === nextProps.data?.currency
 		);
 	},
 );
