@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* text */
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-tertiary: #999999;
+    --text-light: #b3b3b3;
+    --text-extra-light: #cccccc;
+    --text-inverted: #ffffff;
+    --text-disabled: #bebebe;
+    --text-danger: #f83e3e;
+
+    /* background */
+    /* --bg-primary: #000; */
+    --bg-secondary: #fcfcfc;
+    --bg-tertiary: #f1f1f1;
+    --bg-transparent-light: #0000000a;
+    --bg-lighter: #f8f8f8;
+
+    /* border */
+    --border-color-light: #f1f1f1;
+    --border-color-medium: #ebebeb;
+    --border-color-stronger: #d6d6d6;
+
+    /* gray color */
+    --gray-0: #ffffff;
+    --gray-10: #fcfcfc;
+    --gray-15: #f1f1f1;
+    --gray-20: #ebebeb;
+    --gray-25: #d6d6d6;
+    --gray-30: #cccccc;
+    --gray-35: #b3b3b3;
+    --gray-40: #999999;
+    --gray-45: #818181;
+    --gray-50: #666666;
+    --gray-55: #4c4c4c;
+    --gray-60: #333333;
+    --gray-65: #292929;
+    --gray-70: #222222;
+    --gray-75: #1d1d1d;
+    --gray-80: #1b1b1b;
+    --gray-85: #171717;
+    --gray-90: #141414;
+    --gray-95: #0f0f0f;
+    --gray-100: #000000;
+
+    /* yellow color */
+    --yellow-10: #fffbeb;
+    --yellow-20: #fff6d7;
+    --yellow-30: #ffedaf;
+    --yellow-40: #ffe074;
+    --yellow-50: #b99b2e;
+    --yellow-60: #746224;
+    --yellow-70: #453d1e;
+    --yellow-80: #2e2a1a;
+    --yellow-90: #ffd338;
+
+    /* orange color */
+    --orange-10: #fff1e9;
+    --orange-20: #ffe3d3;
+    --orange-30: #ffc7a7;
+    --orange-40: #ff9c64;
+    --orange-50: #b9571f;
+    --orange-60: #743b1b;
+    --orange-70: #452919;
+    --orange-80: #2e2018;
+    --orange-90: #ff7222;
+
+    /* red color */
+    --red-10: #feecec;
+    --red-20: #fed8d8;
+    --red-30: #fcb2b2;
+    --red-40: #fa7878;
+    --red-50: #b43232;
+    --red-60: #712727;
+    --red-70: #441f1f;
+    --red-80: #2d1b1b;
+    --red-90: #f83e3e;
+
+    /* pink color */
+    --pink-10: #feedfa;
+    --pink-20: #fddbf6;
+    --pink-30: #fbb7ec;
+    --pink-40: #f881de;
+    --pink-50: #b23b98;
+    --pink-60: #702c61;
+    --pink-70: #43213c;
+    --pink-80: #2d1c29;
+    --pink-90: #f54bd0;
+
+    /* purple color */
+    --purple-10: #f4efff;
+    --purple-20: #e9dfff;
+    --purple-30: #d3bffe;
+    --purple-40: #b28ffe;
+    --purple-50: #6c49b8;
+    --purple-60: #483473;
+    --purple-70: #2f2545;
+    --purple-80: #231e2e;
+    --purple-90: #915ffd;
+
+    /* blue color */
+    --blue-10: #e8effd;
+    --blue-20: #d1dffb;
+    --blue-30: #a3c0f8;
+    --blue-40: #5e90f2;
+    --blue-50: #184bad;
+    --blue-60: #18356d;
+    --blue-70: #172642;
+    --blue-80: #171e2c;
+    --blue-90: #1961ed;
+
+    /* sky color */
+    --sky-10: #e5fcff;
+    --sky-20: #ccf9ff;
+    --sky-30: #99f3ff;
+    --sky-40: #4de9ff;
+    --sky-50: #07a4b9;
+    --sky-60: #0e6874;
+    --sky-70: #123f45;
+    --sky-80: #152b2e;
+    --sky-90: #00e0ff;
+
+    /* turquoise color*/
+    --turquoise-10: #e8fcf4;
+    --turquoise-20: #d0f8e9;
+    --turquoise-30: #a1f2d2;
+    --turquoise-40: #5be8b1;
+    --turquoise-50: #16a26b;
+    --turquoise-60: #166747;
+    --turquoise-70: #173f2f;
+    --turquoise-80: #172b23;
+    --turquoise-90: #15de8f;
+
+    /* green color */
+    --green-10: #eefdec;
+    --green-20: #ddfcd8;
+    --green-30: #ccfac5;
+    --green-40: #88f477;
+    --green-50: #42ae31;
+    --green-60: #2a5822;
+    --green-70: #23421e;
+    --green-80: #1d2d1b;
+    --green-90: #55ef3c;
+
+    /* accent color */
+    --accent-10: #f5f9fd;
+    --accent-15: #edf2fe;
+    --accent-20: #e2ecfd;
+    --accent-25: #dae6fc;
+    --accent-30: #d4e1fc;
+    --accent-35: #c8d9fb;
+    --accent-40: #a3c0f8;
+    --accent-45: #75a0f4;
+    --accent-50: #4781f1;
+    --accent-55: #1961ed;
+    --accent-60: #1553ca;
+    --accent-65: #1244a6;
+    --accent-70: #18356d;
+    --accent-75: #17294a;
+    --accent-80: #16233f;
+    --accent-85: #152037;
+    --accent-90: #151d2e;
+    --accent-95: #141a25;
+    --accent-100: #000000;
+  }
+
+  .dark {
+  }
+}

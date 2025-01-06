@@ -1,0 +1,30 @@
+{
+  "title": "TimeSheet Management",
+  "label": {
+    "fullName": "Full Name",
+    "checkDate": "Check Date",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "attendanceHours": "Attendance Hours",
+    "workHoursPerDay": "Work Hours Per Day",
+    "breakLunchTime": "Break Lunch Time",
+    "bonusBreakTime": "Bonus Break Time",
+    "totalPaidLeaveHours": "Total Paid Leave Hours",
+    "company": "Company",
+    "user": "User",
+    "timeRange": "Time Range",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "placeholder": {
+    "company": "Select Companies",
+    "user": "Select Users",
+    "timeRange": "Select Time Range",
+    "empty": "No data"
+  },
+  "status": {
+    "all": "All",
+    "missed": "Missed",
+    "completed": "Completed"
+  }
+}

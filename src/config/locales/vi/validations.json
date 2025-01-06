@@ -1,0 +1,28 @@
+{
+  "auth": {
+    "emailInvalid": "Email không hợp lệ.",
+    "emailMinimumRequire": "Email phải có ít nhất 1 ký tự.",
+    "emailMaxRequire": "Email không được vượt quá 40 ký tự.",
+    "phoneRequire": "Số điện thoại phải chứa đúng 10 chữ số.",
+    "phoneInvalid": "Số điện thoại không hợp lệ.",
+    "passwordMinimumRequire": "Mật khẩu phải có ít nhất 6 ký tự.",
+    "passwordMaxRequire": "Mật khẩu không được vượt quá 40 ký tự.",
+    "passwordMustContain": "Mật khẩu phải chứa ít nhất một ký tự đặc biệt.",
+    "passwordCannotContain": "Mật khẩu không được bắt đầu hoặc kết thúc bằng khoảng trắng.",
+    "passwordIncorrect": "Mật khẩu không chính xác."
+  },
+
+  "roles": {
+    "roleNotEmpty": "Tên vai trò không được để trống."
+  },
+  "form": {
+    "required": "Trường này là bắt buộc.",
+    "string": "Trường này phải là một chuỗi."
+  },
+  "fields": {
+    "users": "Người dùng",
+    "companies": "Công ty",
+    "startTime": "Thời gian bắt đầu",
+    "endTime": "Thời gian kết thúc"
+  }
+}

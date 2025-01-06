@@ -1,0 +1,56 @@
+{
+  "title": "Users Management",
+  "modalCreateTitle": "Create User",
+  "modalEditTitle": "Edit User",
+  "placeholder": {
+    "email": "Enter email",
+    "password": "Enter password",
+    "fullName": "Enter full name",
+    "phone": "Enter phone number",
+    "gender": "Select gender",
+    "address": "Enter address",
+    "district": "Enter district",
+    "city": "Enter city",
+    "country": "Enter country",
+    "position": "Enter position",
+    "role": "Select role",
+    "company": "Select company",
+    "companyName": "Enter company name",
+    "companyPolicy": "Select Company Policy",
+    "status": "Select status"
+  },
+
+  "fields": {
+    "username": "Username",
+    "email": "Email",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "address": "Address",
+    "gender": "Gender",
+    "company": "Company",
+    "position": "Position",
+    "joinDate": "Join Date",
+    "role": "Role",
+    "status": "Status",
+    "actions": "Actions",
+    "district": "District",
+    "city": "City",
+    "country": "Country",
+    "password": "Password",
+    "checkDate": "Check Date",
+    "totalWork": "Total Work",
+    "companyName": "Company Name",
+    "policyName": "Policy Name",
+    "companyPolicy": "Company Policy"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "locked": "Locked",
+    "all": "All"
+  }
+}

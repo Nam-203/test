@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": {
+      "login": "Đăng nhập",
+      "register": "Đăng ký",
+      "resendVerifyAccount": "Gửi lại xác minh tài khoản",
+      "forgotPassword": "Quên mật khẩu",
+      "resetPassword": "Đặt lại mật khẩu",
+      "dashboard": "Bảng điều khiển",
+      "profileSettings": "Cài đặt hồ sơ",
+      "commonSettings": "Cài đặt chung",
+      "companies": "Quản lý các công ty",
+      "companyPolicies": "Quản lý chính sách công ty",
+      "employmentHistories": "Quản lý lịch sử nhân viên",
+      "rolesPermissions": "Quản lý Vai trò & Quyền hạn",
+      "timeEntries": "Quản lý bảng chấm công",
+      "userRequests": "Yêu cầu của người dùng",
+      "users": "Quản lý người dùng"
+    }
+  },
+  "categorySidebar": {
+    "common": "Chung",
+    "resources": "Tài nguyên",
+    "authentication": "Xác thực",
+    "accountSetting": "Cài đặt tài khoản"
+  },
+
+  "navigation": {
+    "dashboard": "Bảng điều khiển",
+    "settings": "Cài đặt",
+    "usersManagement": "Quản lý người dùng",
+    "timeSheetManagement": "Quản lý bảng chấm công",
+    "rolesPermissions": "Vai trò & Quyền hạn",
+    "companyPolicies": "Chính sách công ty",
+    "userRequests": "Yêu cầu của người dùng",
+    "companiesManagement": "Quản lý công ty",
+    "logout": "Đăng xuất",
+    "back": "Quay lại",
+    "profile": "Hồ sơ",
+    "theme": "Giao diện",
+    "employmentHistories": "Lịch sử Công việc"
+  },
+
+  "userInfo": {
+    "email": "Thư điện tử",
+    "fullName": "Họ và tên",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "gender": "Giới tính",
+    "company": "Công ty",
+    "position": "Chức vụ",
+    "joinDate": "Ngày gia nhập",
+    "role": "Vai trò",
+    "status": "Trạng thái",
+    "district": "Quận",
+    "city": "Thành phố",
+    "country": "Quốc gia",
+    "password": "Mật khẩu",
+    "checkDate": "Ngày chấm công",
+    "totalWork": "Tổng số giờ làm việc",
+    "companyName": "Tên công ty",
+    "policyName": "Tên chính sách",
+    "companyPolicy": "Chính sách công ty",
+    "probationDate": "Ngày thử việc",
+    "officialDate": "Ngày chính thức"
+  },
+
+  "label": {
+    "picture": "Ảnh",
+    "selectLanguage": "Chọn ngôn ngữ",
+    "information": "Thông tin",
+    "currentTime": "Thời gian hiện tại",
+    "remainingLeaveDays": "Số ngày nghỉ còn lại",
+    "actions": "Hành động",
+    "selectAll": "Chọn tất cả",
+    "deSelectAll": "Bỏ chọn tất cả"
+  },
+
+  "message": {
+    "success": "Thành công",
+    "error": "Lỗi",
+    "errorOccured": "Đã xảy ra lỗi",
+    "closeOrReload": "Đóng hoặc tải lại cửa sổ trình duyệt"
+  },
+
+  "buttons": {
+    "upload": "Tải lên",
+    "remove": "Xóa",
+    "updateProfile": "Cập nhật hồ sơ",
+    "save": "Lưu",
+    "addNew": "Thêm mới",
+    "clear": "Xóa",
+    "search": "Tìm kiếm",
+    "addRole": "Thêm vai trò",
+    "create": "Tạo",
+    "reject": "Từ chối",
+    "approve": "Chấp thuận",
+    "update": "Cập nhật",
+    "deleteRecords": "Xóa bản ghi",
+    "checkIn": "Vào làm",
+    "checkOut": "Ra về",
+    "generate": "Tạo",
+    "deleleSelected": "Xóa đã chọn",
+    "approveSelected": "Chấp thuận đã chọn",
+    "rejectSelected": "Từ chối đã chọn",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "exportExcel": "Xuất Excel"
+  },
+
+  "description": {
+    "uploadPicture": "Chúng tôi hỗ trợ các định dạng PNG, JPEG dưới 2MB",
+    "changePassword": "Mở một hộp thoại để thay đổi mật khẩu."
+  },
+  "noDataFound": "Không tìm thấy dữ liệu",
+  "modal": {
+    "deleteRecords": "Xóa bản ghi",
+    "deleteSelectedMessage": "Hành động này không thể hoàn tác. Điều này sẽ xóa vĩnh viễn ({{count}}) bản ghi.",
+    "approveRecords": "Chấp thuận bản ghi",
+    "rejectRecords": "Từ chối bản ghi",
+    "approveSelectedMessage": "Bạn có chắc chắn muốn chấp thuận ({{count}}) bản ghi đã chọn?",
+    "rejectSelectedMessage": "Bạn có chắc chắn muốn từ chối ({{count}}) bản ghi đã chọn?",
+    "exportRecords": "Xuất bản ghi",
+    "exportRecordsByFilterMessage": "Chọn bộ lọc bạn muốn xuất tệp với"
+  }
+}

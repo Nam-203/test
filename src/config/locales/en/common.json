@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": {
+      "login": "Login",
+      "register": "Register",
+      "resendVerifyAccount": "Resend Verify Account",
+      "forgotPassword": "Forgot Password",
+      "resetPassword": "Reset Password",
+      "dashboard": "Dashboard",
+      "profileSettings": "Profile Settings",
+      "commonSettings": "Common Settings",
+      "companies": "Companies Management",
+      "companyPolicies": "Company Policies Management",
+      "employmentHistories": "Employment Histories Management",
+      "rolesPermissions": "Roles & Permissions Management",
+      "timeEntries": "Time Entries Management",
+      "userRequests": "User Requests",
+      "users": "Users Management"
+    }
+  },
+  "categorySidebar": {
+    "common": "Common",
+    "resources": "Resources",
+    "authentication": "Authentication",
+    "accountSetting": "Account Setting"
+  },
+
+  "navigation": {
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "usersManagement": "Users Management",
+    "timeSheetManagement": "TimeSheet Management",
+    "rolesPermissions": "Roles & Permissions",
+    "companyPolicies": "Company Policies",
+    "userRequests": "User Requests",
+    "companiesManagement": "Companies Management",
+    "logout": "Logout",
+    "back": "Back",
+    "profile": "Profile",
+    "theme": "Theme",
+    "employmentHistories": "Employment Histories"
+  },
+
+  "userInfo": {
+    "email": "Email",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "address": "Address",
+    "gender": "Gender",
+    "company": "Company",
+    "position": "Position",
+    "joinDate": "Join Date",
+    "role": "Role",
+    "status": "Status",
+    "district": "District",
+    "city": "City",
+    "country": "Country",
+    "password": "Password",
+    "checkDate": "Check Date",
+    "totalWork": "Total Work",
+    "companyName": "Company Name",
+    "policyName": "Policy Name",
+    "companyPolicy": "Company Policy",
+    "probationDate": "Probation Date",
+    "officialDate": "Official Date"
+  },
+
+  "label": {
+    "picture": "Picture",
+    "selectLanguage": "Select Language",
+    "information": "Information",
+    "currentTime": "Current Time",
+    "remainingLeaveDays": "Remaining Leave Days",
+    "actions": "Actions",
+    "selectAll": "Select All",
+    "deSelectAll": "Deselect All"
+  },
+
+  "message": {
+    "success": "Success",
+    "error": "Error",
+    "errorOccured": "An error occurred",
+    "closeOrReload": "Close or reload browser window"
+  },
+
+  "buttons": {
+    "upload": "Upload",
+    "remove": "Remove",
+    "updateProfile": "Update Profile",
+    "save": "Save",
+    "addNew": "Add New",
+    "clear": "Clear",
+    "search": "Search",
+    "addRole": "Add Role",
+    "create": "Create",
+    "reject": "Reject",
+    "approve": "Approve",
+    "update": "Update",
+    "deleteRecords": "Delete Records",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "generate": "Generate",
+    "deleleSelected": "Delete Selected",
+    "approveSelected": "Approve Selected",
+    "rejectSelected": "Reject Selected",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "exportExcel": "Export Excel"
+  },
+
+  "description": {
+    "uploadPicture": "We support your best PNGs, JPEGs portraits under 2MB",
+    "changePassword": "Open a modal to change the password."
+  },
+  "noDataFound": "No data found",
+  "modal": {
+    "deleteRecords": "Delete Records",
+    "deleteSelectedMessage": "This action cannot be undone. This will permanently delete ({{count}}) record(s).",
+    "approveRecords": "Approve Records",
+    "rejectRecords": "Reject Records",
+    "approveSelectedMessage": "Are you sure you want to approve ({{count}}) selected record(s)?",
+    "rejectSelectedMessage": "Are you sure you want to reject ({{count}}) selected record(s)?",
+    "exportRecords": "Export Records",
+    "exportRecordsByFilterMessage": "Select the filter you want to export the file with"
+  }
+}

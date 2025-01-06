@@ -1,0 +1,57 @@
+{
+  "title": "Quản Lý Người Dùng",
+  "modalCreateTitle": "Tạo Người Dùng",
+  "modalEditTitle": "Chỉnh Sửa Người Dùng",
+
+  "placeholder": {
+    "email": "Nhập email",
+    "password": "Nhập mật khẩu",
+    "fullName": "Nhập họ và tên",
+    "phone": "Nhập số điện thoại",
+    "gender": "Chọn giới tính",
+    "address": "Nhập địa chỉ",
+    "district": "Nhập quận",
+    "city": "Nhập thành phố",
+    "country": "Nhập quốc gia",
+    "position": "Nhập chức vụ",
+    "role": "Chọn vai trò",
+    "company": "Chọn công ty",
+    "companyName": "Nhập tên công ty",
+    "companyPolicy": "Chọn chính sách công ty",
+    "status": "Chọn trạng thái"
+  },
+
+  "fields": {
+    "username": "Tên đăng nhập",
+    "email": "Email",
+    "fullName": "Họ và tên",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "gender": "Giới tính",
+    "company": "Công ty",
+    "position": "Chức vụ",
+    "joinDate": "Ngày gia nhập",
+    "role": "Vai trò",
+    "status": "Trạng thái",
+    "actions": "Hành động",
+    "district": "Quận",
+    "city": "Thành phố",
+    "country": "Quốc gia",
+    "password": "Mật khẩu",
+    "checkDate": "Ngày chấm công",
+    "totalWork": "Tổng số giờ làm việc",
+    "companyName": "Tên công ty",
+    "policyName": "Tên chính sách",
+    "companyPolicy": "Chính sách công ty"
+  },
+  "gender": {
+    "male": "Nam",
+    "female": "Nữ"
+  },
+  "status": {
+    "active": "Hoạt động",
+    "inactive": "Không hoạt động",
+    "locked": "Đã khóa",
+    "all": "Tất cả"
+  }
+}

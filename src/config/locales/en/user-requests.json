@@ -1,0 +1,50 @@
+{
+  "title": "User Requests Management",
+  "createRequestTitle": "Create Request",
+  "createHolidayTitle": "Create Holiday",
+  "editRequestTitle": "Edit Request",
+  "viewRequestTitle": "View Request",
+  "label": {
+    "requestTime": "Request Time",
+    "requestStatus": "Request Status",
+    "requestType": "Request Type",
+    "reason": "Reason",
+    "requester": "Requester",
+    "approver": "Approver",
+    "company": "Company",
+    "description": "Description",
+    "requestStartTime": "Request Start Time",
+    "requestEndTime": "Request End Time",
+    "typeId": "Request Type",
+    "totalHours": "Total Hours",
+    "actions": "Actions",
+    "status": "Status",
+    "requestName": "Request Name",
+    "approverName": "Approver Name"
+  },
+  "placeholder": {
+    "requestTime": "Select request time",
+    "requestStatus": "Select request status",
+    "requestType": "Select request type",
+    "reason": "Enter reason",
+    "requester": "Select requester",
+    "approver": "Select approver",
+    "company": "Select company",
+    "description": "Enter your description"
+  },
+  "requestTypes": {
+    "editTimeSheet": "Edit Time Sheet",
+    "paidLeave": "Paid Leave",
+    "publicHolidayLeave": "Public holiday Leave",
+    "companyHolidayLeave": "Company holiday Leave",
+    "insuredPaidLeave": "Insurance paid leave",
+    "unpaidLeave": "Unpaid Leave",
+    "remoteWork": "Remote Work",
+    "overtime": "Overtime"
+  },
+  "status": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  }
+}

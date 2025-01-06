@@ -1,0 +1,38 @@
+.ag-root-wrapper {
+  border: none !important;
+}
+.custom-row {
+  position: relative;
+  border-left: none !important;
+  border-right: none !important;
+}
+.ag-column-last {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ag-column-first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.custom-row::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: #1f2937;
+}
+.custom-row:hover {
+  background-color: #1f2937;
+}
+.ag-theme-alpine .ag-header {
+  border-left: none !important;
+  border-right: none !important;
+}
+.ag-theme-alpine .ag-cell {
+  border-left: none !important;
+  border-right: none !important;
+}

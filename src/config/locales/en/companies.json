@@ -1,0 +1,21 @@
+{
+  "title": "Companies Management",
+  "createCompanyTitle": "Create Company",
+  "editCompanyTitle": "Edit Company",
+  "label": {
+    "companyName": "Company Name",
+    "address": "Address",
+    "companyPolicyName": "Company Policy Name",
+    "district": "District",
+    "city": "City",
+    "country": "Country",
+    "policyName": "Policy Name",
+    "companyPolicy": "Company Policy",
+    "actions": "Actions"
+  },
+  "placeholder": {
+    "companyName": "Enter company name",
+    "address": "Enter address",
+    "companyPolicyName": "Enter company policy name"
+  }
+}

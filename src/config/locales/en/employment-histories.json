@@ -1,0 +1,36 @@
+{
+  "title": "Employment Histories",
+  "label": {
+    "fullName": "Full Name",
+    "role": "Role",
+    "company": "Company",
+    "position": "Position",
+    "joinDate": "Join Date",
+    "probationDate": "Probation Date",
+    "officialDate": "Official Date",
+    "nextLeaveAccumulationDate": "Next Leave Accumulation Date",
+    "leaveAccumulationResetDate": "Leave Accumulation Reset Date",
+    "contractRenewDate": "Contract Renew Date",
+    "totalLeaveDays": "Total Leave Days",
+    "usedLeaveDays": "Used Leave Days",
+    "oldUsedLeaveDays": "Old Used Leave Days",
+    "oldTotalLeaveDays": "Old Total Leave Days"
+  },
+  "placeholder": {
+    "fullName": "Enter your full name",
+    "role": "Select role",
+    "company": "Select company",
+    "position": "Select position",
+    "joinDate": "Select join date",
+    "probationDate": "Select probation date",
+    "officialDate": "Select official date",
+    "contractRenewDate": "Select contract renew date",
+    "totalLeaveDays": "Enter total leave days",
+    "usedLeaveDays": "Enter used leave days",
+    "oldUsedLeaveDays": "Enter old used leave days",
+    "oldTotalLeaveDays": "Enter old total leave days"
+  },
+  "modalEdit": {
+    "title": "Edit Employment History"
+  }
+}

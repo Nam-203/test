@@ -1,0 +1,130 @@
+{
+  "title": "Roles & Permissions",
+  "createRole": "Create Role",
+  "editRole": "Edit Role",
+  "assignUsersToRole": "Assign Users to Role",
+
+  "label": {
+    "roleName": "Role Name",
+    "textRoleColor": "Text Role Color",
+    "bgRoleColor": "Background Role Color",
+    "preview": "Preview"
+  },
+
+  "placeholder": {
+    "roleName": "Enter role name"
+  },
+
+  "cardRole": {
+    "deleteRole": "Delete Role",
+    "assignmentPermissions": "Assignment Permissions",
+    "total": "Total",
+    "users": "users"
+  },
+
+  "assignPermissionModal": {
+    "permissionAccess": "Permissions Access"
+  },
+
+  "resources": {
+    "title": {
+      "user": "User",
+      "time-entries": "Time Entries",
+      "user-requests": "User Requests",
+      "skills": "Skills",
+      "companies": "Companies",
+      "roles": "Roles",
+      "tokens": "Tokens",
+      "company-policies": "Company Policies",
+      "request-types": "Request Types",
+      "employment-histories": "Employment Histories"
+    },
+    "subTitle": {
+      "user": "Manage user accounts and authentication.",
+      "time-entries": "Track and manage user check-in, check-out times.",
+      "user-requests": "Handle various user requests.",
+      "skills": "Manage skills data for users.",
+      "companies": "Manage company profiles.",
+      "roles": "Define and manage user roles and permissions.",
+      "tokens": "Handle token-based authentication.",
+      "company-policies": "Manage and enforce company policies.",
+      "request-types": "Manage different types of user requests.",
+      "employment-histories": "Manage employment history records for users."
+    },
+    "permissions": {
+      "actions": {
+        "read": "Read",
+        "readOwn": "Read Own",
+        "readAll": "Read All",
+        "create": "Create",
+        "createOwn": "Create Own",
+        "createAll": "Create All",
+        "update": "Update",
+        "updateAll": "Update All",
+        "updateOwn": "Update Own",
+        "delete": "Delete",
+        "deleteOwn": "Delete Own",
+        "deleteAll": "Delete All"
+      },
+
+      "description": {
+        "readOwnUser": "Allows reading your own user information.",
+        "readAllUser": "Allows reading all user information in the system.",
+        "createUser": "Allows creating new users.",
+        "updateAllUser": "Allows updating all user information.",
+        "updateOwnUser": "Allows updating your own user information.",
+        "deleteUser": "Allows deleting users.",
+
+        "readOwnTimeEntries": "Allows reading your own time entries.",
+        "readAllTimeEntries": "Allows reading all time entries in the system.",
+        "createOwnTimeEntries": "Allows creating new time entries for yourself.",
+        "createAllTimeEntries": "Allows creating time entries for anyone in the system.",
+        "updateOwnTimeEntries": "Allows updating your own time entries.",
+        "updateAllTimeEntries": "Allows updating time entries for anyone in the system.",
+        "deleteTimeEntries": "Allows deleting specific time entries.",
+
+        "readOwnUserRequests": "Allows reading your own requests.",
+        "readAllUserRequests": "Allows reading all requests in the system.",
+        "createOwnUserRequests": "Allows creating new requests for yourself.",
+        "createAllUserRequests": "Allows creating requests for anyone in the system.",
+        "updateOwnUserRequests": "Allows updating your own requests.",
+        "updateAllUserRequests": "Allows updating requests for anyone in the system.",
+        "deleteOwnUserRequests": "Allows deleting your own requests.",
+        "deleteAllUserRequests": "Allows deleting requests for anyone in the system.",
+
+        "readSkills": "Allows reading skill information.",
+        "createSkills": "Allows creating new skills.",
+        "updateSkills": "Allows updating skill information.",
+        "deleteSkills": "Allows deleting skills.",
+
+        "readCompanies": "Allows reading company information.",
+        "createCompanies": "Allows creating new companies.",
+        "updateCompanies": "Allows updating company information.",
+        "deleteCompanies": "Allows deleting companies.",
+
+        "readRoles": "Allows reading role information.",
+        "createRoles": "Allows creating new roles.",
+        "updateRoles": "Allows updating role information.",
+        "deleteRoles": "Allows deleting roles.",
+
+        "readTokens": "Allows reading token information.",
+        "createTokens": "Allows creating new tokens.",
+        "updateTokens": "Allows updating tokens.",
+        "deleteTokens": "Allows deleting tokens.",
+
+        "readCompanyPolicies": "Allows reading company policies.",
+        "createCompanyPolicies": "Allows creating new company policies.",
+        "updateCompanyPolicies": "Allows updating company policies.",
+        "deleteCompanyPolicies": "Allows deleting company policies.",
+
+        "readRequestTypes": "Allows reading request types.",
+        "createRequestTypes": "Allows creating new request types.",
+        "updateRequestTypes": "Allows updating request types.",
+        "deleteRequestTypes": "Allows deleting request types.",
+
+        "readAllEmploymentHistories": "Allows reading all employment history records.",
+        "updateAllEmploymentHistories": "Allows updating any employment history records."
+      }
+    }
+  }
+}

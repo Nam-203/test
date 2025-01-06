@@ -1,0 +1,30 @@
+{
+  "auth": {
+    "emailInvalid": "Email is invalid.",
+    "usernameMinimumRequire": "Username must be at least 1 character.",
+    "usernameMaxRequire": "Username cannot exceed 40 characters.",
+    "emailMinimumRequire": "Email must be at least 1 character.",
+    "emailMaxRequire": "Email cannot exceed 40 characters.",
+    "phoneRequire": "Phone number must contain exactly 10 digits.",
+    "phoneInvalid": "Phone number is invalid.",
+    "passwordMinimumRequire": "Password must be at least 6 characters.",
+    "passwordMaxRequire": "Password cannot exceed 40 characters.",
+    "passwordMustContain": "Password must contain at least one special character.",
+    "passwordCannotContain": "Password cannot start or end with whitespace.",
+    "passwordIncorrect": "Password is incorrect."
+  },
+
+  "roles": {
+    "roleNotEmpty": "Role name can't be empty."
+  },
+  "form": {
+    "required": "This field is required.",
+    "string": "This field must be a string."
+  },
+  "fields": {
+    "users": "Users",
+    "companies": "Companies",
+    "startTime": "Start Time",
+    "endTime": "End Time"
+  }
+}

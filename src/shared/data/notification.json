@@ -1,0 +1,40 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "date": "12/12/2024",
+      "time": "12:00",
+      "title": "BẢN TIN TRƯA NGÀY 30.12.2024",
+      "content": "BẢN TIN TRƯA NGÀY 30.12.2024",
+      "description": "Cập nhật thông tin thị trường chứng khoán trong phiên giao dịch trưa ngày 30/12/2024",
+      "image": "/image.png"
+    },
+    {
+      "id": 2,
+      "date": "13/12/2024",
+      "time": "14:30",
+      "title": "BẢN TIN CHIỀU NGÀY 13.12.2024",
+      "content": "BẢN TIN CHIỀU NGÀY 13.12.2024",
+      "description": "Cập nhật thông tin thị trường chứng khoán trong phiên giao dịch chiều ngày 13/12/2024",
+      "image": "/image2.png"
+    },
+    {
+      "id": 3,
+      "date": "14/12/2024",
+      "time": "10:00",
+      "title": "BẢN TIN SÁNG NGÀY 14.12.2024",
+      "content": "BẢN TIN SÁNG NGÀY 14.12.2024",
+      "description": "Cập nhật thông tin thị trường chứng khoán trong phiên giao dịch sáng ngày 14/12/2024",
+      "image": "/image3.png"
+    },
+    {
+      "id": 4,
+      "date": "15/12/2024",
+      "time": "09:00",
+      "title": "BẢN TIN SÁNG NGÀY 15.12.2024",
+      "content": "BẢN TIN SÁNG NGÀY 15.12.2024",
+      "description": "Cập nhật thông tin thị trường chứng khoán trong phiên giao dịch sáng ngày 15/12/2024",
+      "image": "/image4.png"
+    }
+  ]
+}
