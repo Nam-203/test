@@ -72,10 +72,7 @@ const ForgotPasswordForm = () => {
 	return (
 		<div className="flex h-full flex-col items-center justify-center">
 			<div className="flex w-[90%] max-w-[500px] flex-col justify-center rounded-lg bg-white p-8 text-center shadow-s-light-b-strong">
-				<div
-					className="mb-4 flex justify-center bg-gray-50" // Add background color to reduce CLS
-					style={{ aspectRatio: "250/250" }} // Lock aspect ratio
-				>
+				<div className="mb-4 flex justify-center">
 					<Image
 						src="/assets/images/auth-logo.webp"
 						alt="Logo"
@@ -83,19 +80,18 @@ const ForgotPasswordForm = () => {
 						height={250}
 						priority
 						quality={75}
-						placeholder="blur"
-						blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E"
-						className="transform-gpu"
+						sizes="250px"
+						loading="eager"
+						decoding="async"
+						fetchPriority="high"
+						className="object-contain"
 						style={{
-							objectFit: "contain",
-							width: "100%",
-							height: "auto",
+							transform: "translateZ(0)",
 						}}
 					/>
 				</div>
-
 				<div className="mb-8 text-xl font-semibold text-primary">
-					{t("auth:forgotPassword.title")}
+					Send email to reset password
 				</div>
 				<form className="flex flex-col" onSubmit={onSubmit}>
 					<div className="flex flex-col gap-3">

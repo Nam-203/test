@@ -3,6 +3,10 @@ const nextConfig = {
 	// Tắt chế độ strict mode để không phải quản lý state cho date và views trong react-big-calendar
 	reactStrictMode: false,
 	images: {
+		formats: ["image/avif", "image/webp"],
+		minimumCacheTTL: 31536000,
+		deviceSizes: [250],
+		imageSizes: [250],
 		remotePatterns: [
 			{
 				protocol: "https",
@@ -46,9 +50,9 @@ const nextConfig = {
 	},
 	// Thêm cấu hình ESLint để bỏ qua kiểm tra khi build
 	eslint: {
-	  // Warning: This allows production builds to successfully complete even if
-	  // your project has ESLint errors.
-	  ignoreDuringBuilds: true
+		// Warning: This allows production builds to successfully complete even if
+		// your project has ESLint errors.
+		ignoreDuringBuilds: true,
 	},
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
