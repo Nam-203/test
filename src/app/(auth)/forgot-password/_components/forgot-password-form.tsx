@@ -26,6 +26,7 @@ const BackToLoginLink = ({ t }: { t: (key: string) => string }) => (
 			alt="chevron-left"
 			width={8}
 			height={8}
+			priority
 		/>
 		<Link
 			href={APP_ROUTES.AUTH.LOGIN}
@@ -82,6 +83,8 @@ const ForgotPasswordForm = () => {
 						decoding="async"
 						fetchPriority="high"
 						priority
+						sizes="(max-width: 500px) 90vw, 250px"
+						className="h-auto w-auto"
 					/>
 				</div>
 				<div className="mb-8 text-xl font-semibold text-primary">
