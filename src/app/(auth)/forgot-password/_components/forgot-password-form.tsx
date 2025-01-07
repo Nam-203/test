@@ -77,9 +77,8 @@ const ForgotPasswordForm = () => {
 						alt="forgot-password-logo"
 						width={250}
 						height={250}
-						priority
 						quality={75}
-						loading="eager"
+						loading="lazy"
 					/>
 				</div>
 				<div className="mb-8 text-xl font-semibold text-primary">
