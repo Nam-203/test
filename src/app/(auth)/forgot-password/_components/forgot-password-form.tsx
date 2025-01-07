@@ -84,7 +84,6 @@ const ForgotPasswordForm = () => {
 						fetchPriority="high"
 						priority
 						sizes="(max-width: 500px) 90vw, 250px"
-						className="h-auto w-auto"
 					/>
 				</div>
 				<div className="mb-8 text-xl font-semibold text-primary">

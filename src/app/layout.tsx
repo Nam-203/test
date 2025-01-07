@@ -25,6 +25,14 @@ export default function RootLayout({
 
 	return (
 		<html lang={language} suppressHydrationWarning>
+			<head>
+				<link
+					rel="preload"
+					as="image"
+					href="/assets/images/auth-logo.webp"
+					type="image/webp"
+				/>
+			</head>
 			<body className="">
 				<TanStackProvider>
 					{/* <ThemeProvider attribute='class' defaultTheme={EThemes.System} enableSystem disableTransitionOnChange> */}
