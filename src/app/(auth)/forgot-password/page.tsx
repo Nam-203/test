@@ -23,7 +23,7 @@ const ForgotPasswordForm = dynamic(
 
 export default function ForgotPasswordPage() {
 	return (
-		<div className="h-screen w-full bg-auth-background bg-cover bg-center">
+		<div className="h-screen w-full bg-auth-background bg-cover bg-center bg-no-repeat">
 			<ForgotPasswordForm />
 		</div>
 	);
