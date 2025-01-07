@@ -16,6 +16,7 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import NotificationCard from "../notificationCard/notificationCard";
 
 export function Header() {
+	const router = useRouter();
 	const pathname = usePathname();
 	const params = useParams();
 	const [search, setSearch] = useState("");
@@ -35,9 +36,14 @@ export function Header() {
 	);
 	const getPageLabel = useCallback(() => {
 		const currentItem = menuItems.find((item) => item.path === pathname);
-		return currentItem ? currentItem.label : "Trang khác";
-	}, [pathname, menuItems]);
-	const router = useRouter();
+
+		if (currentItem) {
+			return currentItem.label;
+		}
+		router.push("/404");
+		return null;
+	}, [pathname, menuItems, router]);
+
 	const isNotificationPage = pathname.startsWith("/notification");
 
 	useEffect(() => {
@@ -97,27 +103,27 @@ export function Header() {
 		}
 
 		return (
-			<header className="fixed left-0 top-0 z-30 flex h-[100px] w-full items-center justify-between gap-2 border-b-[25px] border-gray-300 bg-custom-gradient p-4 md:hidden">
+			<header className="fixed left-0 top-0 z-30 flex h-[80px] w-full items-center justify-between gap-2 bg-custom-gradient p-4 md:hidden">
 				<div className="flex items-center">
-					<p className="text-sm font-bold capitalize text-white">
+					<p className="text-xs font-bold capitalize text-white sm:text-sm">
 						{pathname === "/" ? "Thị trường" : getPageLabel()}
 					</p>
 				</div>
 				{isSearch ? (
 					<div className="flex origin-left scale-x-100 transform items-center overflow-hidden rounded-[5px] border border-white bg-[#70747900] px-2 py-1 transition-transform duration-300">
-						<FaSearch className="h-[15px] w-[19px] pl-1 text-white" />
+						<FaSearch className="h-[15px] w-[19px]  text-white" />
 						<input
 							type="text"
 							name="search"
 							placeholder="Tìm mã chứng khoán"
-							className="ml-2 w-full max-w-full bg-transparent text-sm text-gray-300 focus:outline-none"
+							className="ml-2 w-[120px] bg-transparent text-sm text-gray-300 focus:outline-none sm:w-[150px]"
 							onChange={(e) => setSearch(e.target.value)}
 						/>
 					</div>
 				) : null}
 				<div className="flex items-center gap-2">
 					<FaSearch
-						className="h-[15px] w-[19px] cursor-pointer pl-1 text-white"
+						className="h-[20px] w-[20px] cursor-pointer pl-1 text-white"
 						onClick={() => setIsSearch(!isSearch)}
 					/>
 					<MdLanguage className="h-5 w-5 cursor-pointer text-base text-white" />
