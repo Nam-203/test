@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import {
@@ -25,24 +25,18 @@ export function Header() {
 		null,
 	);
 
-	const [menuItems] = useState([
-		{
-			id: "trading",
-			label: "Thị trường",
-			path: "/",
-		},
-		{
-			id: "balance",
-			label: "Sổ lệnh",
-			path: "/balance",
-		},
-		{
-			id: "profile",
-			label: "Danh mục",
-			path: "/category",
-		},
-	]);
-
+	const menuItems = useMemo(
+		() => [
+			{ id: "trading", label: "Thị trường", path: "/" },
+			{ id: "balance", label: "Sổ lệnh", path: "/balance" },
+			{ id: "profile", label: "Danh mục", path: "/category" },
+		],
+		[],
+	);
+	const getPageLabel = useCallback(() => {
+		const currentItem = menuItems.find((item) => item.path === pathname);
+		return currentItem ? currentItem.label : "Trang khác";
+	}, [pathname, menuItems]);
 	const router = useRouter();
 	const isNotificationPage = pathname.startsWith("/notification");
 
@@ -106,7 +100,7 @@ export function Header() {
 			<header className="fixed left-0 top-0 z-30 flex h-[100px] w-full items-center justify-between gap-2 border-b-[25px] border-gray-300 bg-custom-gradient p-4 md:hidden">
 				<div className="flex items-center">
 					<p className="text-sm font-bold capitalize text-white">
-						{pathname === "/" ? "Thị trường" : pathname.split("/")[1]}
+						{pathname === "/" ? "Thị trường" : getPageLabel()}
 					</p>
 				</div>
 				{isSearch ? (
