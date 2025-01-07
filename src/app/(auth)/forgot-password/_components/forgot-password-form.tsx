@@ -73,7 +73,7 @@ const ForgotPasswordForm = () => {
 			<div className="flex w-[90%] max-w-[500px] flex-col justify-center rounded-lg bg-white p-8 text-center shadow-s-light-b-strong">
 				<div className="mb-4 flex justify-center">
 					<Image
-						src="/logo.webp"
+						src="/assets/images/auth-logo.webp"
 						alt="forgot-password-logo"
 						width={250}
 						height={250}

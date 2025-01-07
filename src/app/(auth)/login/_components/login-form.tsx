@@ -56,7 +56,7 @@ const LoginForm = () => {
 			<div className="flex w-[90%] max-w-[500px] flex-col justify-center rounded-lg bg-white p-8 text-center shadow-s-light-b-strong">
 				<div className="mb-4 flex justify-center">
 					<Image
-						src="/assets/images/auth-logo.png"
+						src="/assets/images/auth-logo.webp"
 						alt="login-logo"
 						width={250}
 						height={250}
