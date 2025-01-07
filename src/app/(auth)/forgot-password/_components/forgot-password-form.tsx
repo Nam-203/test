@@ -72,20 +72,28 @@ const ForgotPasswordForm = () => {
 	return (
 		<div className="flex h-full flex-col items-center justify-center">
 			<div className="flex w-[90%] max-w-[500px] flex-col justify-center rounded-lg bg-white p-8 text-center shadow-s-light-b-strong">
-				<div className="mb-4 flex justify-center">
+				<div
+					className="mb-4 flex justify-center bg-gray-50" // Add background color to reduce CLS
+					style={{ aspectRatio: "250/250" }} // Lock aspect ratio
+				>
 					<Image
 						src="/assets/images/auth-logo.webp"
-						alt="forgot-password-logo"
+						alt="Logo"
 						width={250}
 						height={250}
-						quality={75}
-						loading="eager"
-						decoding="async"
-						fetchPriority="high"
 						priority
-						sizes="(max-width: 500px) 90vw, 250px"
+						quality={75}
+						placeholder="blur"
+						blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E"
+						className="transform-gpu"
+						style={{
+							objectFit: "contain",
+							width: "100%",
+							height: "auto",
+						}}
 					/>
 				</div>
+
 				<div className="mb-8 text-xl font-semibold text-primary">
 					{t("auth:forgotPassword.title")}
 				</div>

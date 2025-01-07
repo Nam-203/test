@@ -28,8 +28,8 @@ export default function RootLayout({
 			<head>
 				<link
 					rel="preload"
-					as="image"
 					href="/assets/images/auth-logo.webp"
+					as="image"
 					type="image/webp"
 				/>
 			</head>
