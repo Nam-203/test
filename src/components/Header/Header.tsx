@@ -142,7 +142,7 @@ export function Header() {
 			<header className="fixed left-0 top-0 z-30 hidden h-[90px] w-full items-center justify-between gap-2 bg-custom-gradient px-4 md:flex">
 				<div className="flex items-center space-x-2">
 					<Image
-						src="/logo.png"
+						src="/logo.webp"
 						alt="logo"
 						className="h-10 w-10"
 						width={40}
