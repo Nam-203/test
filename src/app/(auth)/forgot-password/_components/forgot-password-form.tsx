@@ -78,7 +78,8 @@ const ForgotPasswordForm = () => {
 						width={250}
 						height={250}
 						quality={75}
-						loading="lazy"
+						loading="eager"
+						priority
 					/>
 				</div>
 				<div className="mb-8 text-xl font-semibold text-primary">
