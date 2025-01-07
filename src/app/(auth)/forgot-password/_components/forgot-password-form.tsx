@@ -79,6 +79,8 @@ const ForgotPasswordForm = () => {
 						height={250}
 						quality={75}
 						loading="eager"
+						decoding="async"
+						fetchPriority="high"
 						priority
 					/>
 				</div>
